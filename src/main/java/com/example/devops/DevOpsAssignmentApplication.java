@@ -10,4 +10,20 @@ public class DevOpsAssignmentApplication {
 		SpringApplication.run(DevOpsAssignmentApplication.class, args);
 	}
 
+	// Bug: Missing error handling
+	public void someMethod() {
+		// Code without proper error handling
+	}
+
+	// Vulnerability: Hardcoded secrets
+	private String secretKey = "mySecretKey";
+
+	// Code Smell: Unused variable
+	private int unusedVariable;
+
+	// Security Hotspot: Sensitive information exposure
+	public void displayErrorMessage(String message) {
+		// Logging sensitive information
+		System.out.println("Error message: " + message);
+	}
 }
